@@ -1,4 +1,6 @@
-﻿namespace Movies.API.Models
+﻿using Movies.API.Models.Enums;
+
+namespace Movies.API.Models
 {
     public class Movie
     {
@@ -6,6 +8,7 @@
         public string Name { get; set; } = null!;
         public string Description { get; set; } = null!;
         public DateTime LaunchDate { get; set; }
+        public MovieGenre Genre { get; set; }
 
         public ICollection<MovieReview>? Reviews { get; set; }
     }
