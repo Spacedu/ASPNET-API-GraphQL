@@ -11,8 +11,8 @@ namespace Movies.API.GraphQL.Types
             Field(a=>a.Name).Description("Name of movie");
             Field(a=>a.Description).Description("Description of movie");
             Field(a=>a.LaunchDate).Description("Launch date of movie");
-            Field<MovieGenreType>("Genre").Description("Genre of movie");
-            Field(a=>a.Reviews).Description("Reviews of movie");
+            Field<MovieGenreType>("genre").Description("Genre of movie");
+            Field<MovieReviewType>("review").Description("Reviews of movie");
         }
     }
 }
