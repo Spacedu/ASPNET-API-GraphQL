@@ -14,10 +14,12 @@ namespace Movies.API.GraphQL.Types
             Field(a=>a.LaunchDate).Description("Launch date of movie");
             Field<MovieGenreType>("genre").Description("Genre of movie");
             Field<ListGraphType<MovieReviewType>>("reviews").Description("Reviews of movie")
-                .ResolveAsync(async context =>
+                .Resolve(context =>
                 {
+                    if (context.Source.Reviews != null) return context.Source.Reviews;
+
                     var movieId = context.Source.Id;
-                    return await db.Reviews.Where(a => a.MovieId == movieId).ToListAsync();
+                    return db.Reviews.Where(a => a.MovieId == movieId).ToList();
                 });
         }
     }
