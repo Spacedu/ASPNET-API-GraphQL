@@ -15,7 +15,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<MoviesDbContext>(options => options.UseSqlServer(connectionString));
 builder.Services.AddScoped<MovieQuery>();
 builder.Services.AddScoped<MovieSchema>();
-builder.Services.AddGraphQL(options=>options.AddGraphTypes().AddSystemTextJson());
+builder.Services.AddGraphQL(options=>options.AddGraphTypes().AddSystemTextJson().AddDataLoader());
 
 var app = builder.Build();
 
