@@ -59,6 +59,7 @@ INSERT INTO [dbo].[Reviews] ([Rate], [Comment], [CreatedAt], [MovieId]) VALUES
 (5, 'A thrilling adventure!', '2019-06-25', 1);
 
 -- Reviews for Love in Paris (MovieId = 2)
+INSERT INTO [dbo].[Reviews] ([Rate], [Comment], [CreatedAt], [MovieId]) VALUES
 (5, 'Beautiful love story.', '2020-02-20', 2),
 (4, 'Heartwarming and romantic.', '2020-02-25', 2),
 (3, 'Decent, but slow in parts.', '2020-03-01', 2),
@@ -66,6 +67,7 @@ INSERT INTO [dbo].[Reviews] ([Rate], [Comment], [CreatedAt], [MovieId]) VALUES
 (4, 'Lovely setting and chemistry.', '2020-03-10', 2);
 
 -- Reviews for The Haunted Manor (MovieId = 3)
+INSERT INTO [dbo].[Reviews] ([Rate], [Comment], [CreatedAt], [MovieId]) VALUES
 (5, 'Scary and thrilling!', '2018-11-05', 3),
 (4, 'A well-made horror movie.', '2018-11-10', 3),
 (3, 'Creepy, but not too scary.', '2018-11-15', 3),
@@ -73,88 +75,105 @@ INSERT INTO [dbo].[Reviews] ([Rate], [Comment], [CreatedAt], [MovieId]) VALUES
 (5, 'One of the best horror films!', '2018-11-25', 3);
 
 -- Reviews for Dreamland (MovieId = 4)
+INSERT INTO [dbo].[Reviews] ([Rate], [Comment], [CreatedAt], [MovieId]) VALUES
 (5, 'Magical and immersive!', '2021-07-15', 4),
 (4, 'Great fantasy elements.', '2021-07-20', 4),
 (3, 'Enjoyable but predictable.', '2021-07-25', 4),
 (5, 'A visually stunning experience.', '2021-07-30', 4);
 
 -- Reviews for Laughter Therapy (MovieId = 5)
+INSERT INTO [dbo].[Reviews] ([Rate], [Comment], [CreatedAt], [MovieId]) VALUES
 (5, 'Hilarious and well-acted!', '2023-04-05', 5),
 (4, 'Good humor and timing.', '2023-04-10', 5),
 (3, 'Some jokes didn’t land.', '2023-04-15', 5),
 (5, 'A must-watch for comedy lovers.', '2023-04-20', 5);
 
 -- Reviews for Speed Chase (MovieId = 6)
+INSERT INTO [dbo].[Reviews] ([Rate], [Comment], [CreatedAt], [MovieId]) VALUES
 (5, 'Adrenaline rush from start to finish!', '2017-06-20', 6),
 (4, 'Great action and car chases.', '2017-06-25', 6),
 (3, 'A bit unrealistic, but fun.', '2017-06-30', 6);
 
 -- Reviews for Forever Yours (MovieId = 7)
+INSERT INTO [dbo].[Reviews] ([Rate], [Comment], [CreatedAt], [MovieId]) VALUES
 (5, 'A touching love story.', '2022-08-25', 7),
 (4, 'Beautiful performances.', '2022-08-30', 7),
 (3, 'Some parts felt overly dramatic.', '2022-09-05', 7);
 
 -- Reviews for Dark Shadows (MovieId = 8)
+INSERT INTO [dbo].[Reviews] ([Rate], [Comment], [CreatedAt], [MovieId]) VALUES
 (5, 'Genuinely creepy atmosphere.', '2016-11-30', 8),
 (4, 'Good horror elements.', '2016-12-05', 8),
 (3, 'Predictable but still scary.', '2016-12-10', 8);
 
 -- Reviews for The Magic Portal (MovieId = 9)
+INSERT INTO [dbo].[Reviews] ([Rate], [Comment], [CreatedAt], [MovieId]) VALUES
 (5, 'A fascinating fantasy world.', '2021-04-05', 9),
 (4, 'Engaging and creative.', '2021-04-10', 9),
 (3, 'Great for kids and adults alike.', '2021-04-15', 9);
 
 -- Reviews for Jokes on You (MovieId = 10)
+INSERT INTO [dbo].[Reviews] ([Rate], [Comment], [CreatedAt], [MovieId]) VALUES
 (5, 'Laugh-out-loud funny!', '2019-09-10', 10),
 (4, 'Clever and well-written.', '2019-09-15', 10),
 (3, 'Some jokes were hit or miss.', '2019-09-20', 10);
 
 -- Reviews for Warriors of the Night (MovieId = 11)
+INSERT INTO [dbo].[Reviews] ([Rate], [Comment], [CreatedAt], [MovieId]) VALUES
 (5, 'Action-packed and thrilling.', '2020-12-25', 11),
 (4, 'Great performances and cinematography.', '2021-01-02', 11),
 (3, 'Could have had a better storyline.', '2021-01-10', 11);
 
 -- Reviews for Eternal Love (MovieId = 12)
+INSERT INTO [dbo].[Reviews] ([Rate], [Comment], [CreatedAt], [MovieId]) VALUES
 (5, 'A love story that stands the test of time.', '2018-05-18', 12),
 (4, 'Beautifully shot and emotional.', '2018-05-25', 12),
 (3, 'Felt a bit too long.', '2018-06-01', 12);
 
 -- Reviews for The Cursed Doll (MovieId = 13)
+INSERT INTO [dbo].[Reviews] ([Rate], [Comment], [CreatedAt], [MovieId]) VALUES
 (5, 'Absolutely terrifying!', '2019-11-02', 13),
 (4, 'Great horror elements.', '2019-11-10', 13),
 (3, 'Some parts were predictable.', '2019-11-15', 13);
 
 -- Reviews for The Dragon’s Secret (MovieId = 14)
+INSERT INTO [dbo].[Reviews] ([Rate], [Comment], [CreatedAt], [MovieId]) VALUES
 (5, 'Epic fantasy adventure!', '2022-06-15', 14),
 (4, 'Amazing world-building.', '2022-06-20', 14),
 (3, 'Good, but felt rushed at times.', '2022-06-25', 14);
 
 -- Reviews for Comedy Central (MovieId = 15)
+INSERT INTO [dbo].[Reviews] ([Rate], [Comment], [CreatedAt], [MovieId]) VALUES
 (5, 'Laugh-out-loud funny.', '2023-03-15', 15),
 (4, 'Witty and entertaining.', '2023-03-20', 15),
 (3, 'Some jokes didn’t land.', '2023-03-25', 15);
 
 -- Reviews for The Escape Plan (MovieId = 16)
+INSERT INTO [dbo].[Reviews] ([Rate], [Comment], [CreatedAt], [MovieId]) VALUES
 (5, 'Brilliantly executed escape scenes.', '2017-07-25', 16),
 (4, 'Engaging and suspenseful.', '2017-07-30', 16),
 (3, 'Could have been more intense.', '2017-08-05', 16);
 
 -- Reviews for Love Across Oceans (MovieId = 17)
+INSERT INTO [dbo].[Reviews] ([Rate], [Comment], [CreatedAt], [MovieId]) VALUES
 (5, 'A beautiful cross-cultural romance.', '2021-09-28', 17),
 (4, 'Well-acted and emotional.', '2021-10-05', 17),
 (3, 'A bit predictable.', '2021-10-10', 17);
 
 -- Reviews for House of Screams (MovieId = 18)
+INSERT INTO [dbo].[Reviews] ([Rate], [Comment], [CreatedAt], [MovieId]) VALUES
 (5, 'Terrifying from start to finish!', '2016-12-18', 18),
 (4, 'Kept me at the edge of my seat.', '2016-12-25', 18),
 (3, 'A decent horror flick.', '2016-12-30', 18);
 
 -- Reviews for The Enchanted Forest (MovieId = 19)
+INSERT INTO [dbo].[Reviews] ([Rate], [Comment], [CreatedAt], [MovieId]) VALUES
 (5, 'A visually stunning fairy tale.', '2020-05-02', 19),
 (4, 'Magical and heartwarming.', '2020-05-10', 19),
 (3, 'Some parts dragged.', '2020-05-15', 19);
 
 -- Reviews for Funny Business (MovieId = 20)
+INSERT INTO [dbo].[Reviews] ([Rate], [Comment], [CreatedAt], [MovieId]) VALUES
 (5, 'A hilarious take on office life.', '2019-01-25', 20),
 (4, 'Clever and relatable.', '2019-02-02', 20),
 (3, 'Could have been funnier.', '2019-02-10', 20);
