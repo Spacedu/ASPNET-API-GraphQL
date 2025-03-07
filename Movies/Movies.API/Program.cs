@@ -2,6 +2,7 @@ using GraphQL;
 using Microsoft.EntityFrameworkCore;
 using Movies.API.Data;
 using Movies.API.GraphQL;
+using Movies.API.GraphQL.Mutations;
 using Movies.API.GraphQL.Queries;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +15,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<MoviesDbContext>(options => options.UseSqlServer(connectionString));
 builder.Services.AddScoped<MovieQuery>();
+builder.Services.AddScoped<MovieMutation>();
 builder.Services.AddScoped<MovieSchema>();
 builder.Services.AddGraphQL(options=>options.AddGraphTypes().AddSystemTextJson().AddDataLoader());
 

@@ -1,4 +1,5 @@
-﻿using Movies.API.GraphQL.Queries;
+﻿using Movies.API.GraphQL.Mutations;
+using Movies.API.GraphQL.Queries;
 
 namespace Movies.API.GraphQL
 {
@@ -7,6 +8,7 @@ namespace Movies.API.GraphQL
         public MovieSchema(IServiceProvider service) : base(service)
         {
             Query = service.GetRequiredService<MovieQuery>();
+            Mutation = service.GetRequiredService<MovieMutation>();
         }
     }
 }
