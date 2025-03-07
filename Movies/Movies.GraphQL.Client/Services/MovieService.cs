@@ -34,7 +34,7 @@ namespace Movies.GraphQL.Client.Services
 
             return response.Data.Movies;
         }
-        public async Task<Movie> AddMovies(Movie movie)
+        public async Task<Movie> AddMovie(Movie movie)
         {
             var query = new GraphQLRequest()
             {
@@ -45,6 +45,31 @@ namespace Movies.GraphQL.Client.Services
             var response = await Client.SendMutationAsync<MovieResponse>(query);
 
             return response.Data.Movie;
+        }
+        public async Task<Movie> UpdateMovie(int id, Movie movie)
+        {
+            var query = new GraphQLRequest()
+            {
+                
+                Query = "mutation UpdateMovie($id:ID! $movie:MovieInput!) { movie:updateMovie(id:$id movie:$movie ) { id name description launchDate genre } }",
+                Variables = new { id = id, movie = new { movie.Name, movie.Description, movie.LaunchDate, movie.Genre } }
+            };
+
+            var response = await Client.SendMutationAsync<MovieResponse>(query);
+
+            return response.Data.Movie;
+        }
+        public async Task<Boolean> DeleteMovie(int id)
+        {
+            var query = new GraphQLRequest()
+            {
+                Query = "mutation DeleteMovie($id:ID!) { deleted:deleteMovie(id:$id) }",
+                Variables = new { id = id }
+            };
+
+            var response = await Client.SendMutationAsync<DeleteResponse>(query);
+
+            return response.Data.Deleted;
         }
     }
 }
