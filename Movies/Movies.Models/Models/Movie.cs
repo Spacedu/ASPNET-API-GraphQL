@@ -1,6 +1,6 @@
-﻿using Movies.API.Models.Enums;
+﻿using Movies.Models.Enums;
 
-namespace Movies.API.Models
+namespace Movies.Models
 {
     public class Movie
     {

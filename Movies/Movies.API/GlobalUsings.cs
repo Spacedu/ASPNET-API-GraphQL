@@ -1,4 +1,4 @@
 ﻿global using GraphQL.Types;
 
-global using Movies.API.Models;
-global using Movies.API.Models.Enums;
+global using Movies.Models;
+global using Movies.Models.Enums;
