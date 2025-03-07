@@ -1,17 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="GraphQL.Client" Version="6.1.0" />
-    <PackageReference Include="GraphQL.Client.Serializer.SystemTextJson" Version="6.1.0" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\Movies.GraphQL.Client\Movies.GraphQL.Client.csproj" />
     <ProjectReference Include="..\Movies.Models\Movies.Models.csproj" />
   </ItemGroup>
 
