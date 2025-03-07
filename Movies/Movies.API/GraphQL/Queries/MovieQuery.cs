@@ -10,14 +10,14 @@ namespace Movies.API.GraphQL.Queries
         public MovieQuery(MoviesDbContext db)
         {
             Field<ListGraphType<MovieType>>("movies")
-                .ResolveAsync(async a=> await db.Movies.ToListAsync());
+                .Resolve(a=> db.Movies.ToList());
 
             Field<MovieType>("movie")
                 .Arguments(new QueryArguments(new QueryArgument<NonNullGraphType<IntGraphType>>() { Name = "id" }))
-                .ResolveAsync(async context =>
+                .Resolve(context =>
                 {
                     var id = context.GetArgument<int>("id");
-                    return await db.Movies.SingleAsync(a=>a.Id == id);
+                    return db.Movies.Single(a=>a.Id == id);
                 });                
         }
     }
