@@ -71,5 +71,15 @@ namespace Movies.GraphQL.Client.Services
 
             return response.Data.Deleted;
         }
+        
+        public IObservable<GraphQLResponse<MovieResponse>> SubscriptionMovieAdded()
+        {
+            var query = new GraphQLRequest()
+            {
+                Query = "subscription MovieAdded { movie:movieAdded { id name description launchDate genre } }"
+            };
+
+            return Client.CreateSubscriptionStream<MovieResponse>(query);
+        }
     }
 }

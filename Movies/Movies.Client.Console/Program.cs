@@ -2,6 +2,15 @@
 using Movies.Models;
 
 var service = new MovieService();
+
+var sub = service.SubscriptionMovieAdded();
+
+sub.Subscribe(response =>
+{
+    Console.WriteLine($"Sub - Movie Added: {response.Data.Movie.Id} - {response.Data.Movie.Name}");
+});
+
+/*
 var movie = await service.GetMovie(51);
 Console.WriteLine($"Movie: {movie.Name}");
 
@@ -35,5 +44,5 @@ var movieIdToDelete = 1014;
 bool deleted = await service.DeleteMovie(movieIdToDelete);
 
 Console.WriteLine($"Movie deleted {movieIdToDelete} - {deleted}");
-
+*/
 Console.ReadKey();
