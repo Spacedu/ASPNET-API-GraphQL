@@ -1,5 +1,6 @@
 ﻿using GraphQL;
 using Movies.API.Data;
+using Movies.API.GraphQL.Subscriptions.Messages;
 using Movies.API.GraphQL.Types;
 using Movies.API.GraphQL.Types.Inputs;
 
@@ -7,7 +8,7 @@ namespace Movies.API.GraphQL.Mutations
 {
     public class MovieMutation : ObjectGraphType
     {
-        public MovieMutation(MoviesDbContext db)
+        public MovieMutation(MoviesDbContext db, MovieMessage movieMessage)
         {
             Field<MovieType>("addMovie").Arguments(
                 new QueryArgument<NonNullGraphType<MovieInputType>>()
@@ -21,6 +22,8 @@ namespace Movies.API.GraphQL.Mutations
                 
                 db.Movies.Add(movie);
                 await db.SaveChangesAsync();
+
+                movieMessage.AddMovie(movie);
 
                 return movie;
             });

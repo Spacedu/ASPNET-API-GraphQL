@@ -10,7 +10,7 @@ namespace Movies.API.GraphQL
         {
             Query = service.GetRequiredService<MovieQuery>();
             Mutation = service.GetRequiredService<MovieMutation>();
-            //Subscription = service.GetRequiredService<MovieSubscription>();
+            Subscription = service.GetRequiredService<MovieSubscription>();
         }
     }
 }

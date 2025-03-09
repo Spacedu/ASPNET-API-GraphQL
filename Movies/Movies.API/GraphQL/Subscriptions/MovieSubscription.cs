@@ -1,12 +1,18 @@
-﻿using Movies.API.GraphQL.Types;
+﻿using Movies.API.GraphQL.Subscriptions.Messages;
+using Movies.API.GraphQL.Types;
 
 namespace Movies.API.GraphQL.Subscriptions
 {
     public class MovieSubscription : ObjectGraphType
     {
-        public MovieSubscription()
+        private readonly MovieMessage _movieMessage;
+        public MovieSubscription(MovieMessage movieMessage)
         {
-            Field<MovieType, Movie>("movieAdded");
+            _movieMessage = movieMessage;
+
+            Field<MovieType, Movie>("movieAdded").ResolveStream(context => {
+                return _movieMessage.ReceiveMovie();
+            });
         }
     }
 }
