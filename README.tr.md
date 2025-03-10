@@ -1,32 +1,32 @@
-# 🚀 Curso de ASP.NET Core 8.0 com GraphQL 🌐
+# 🚀 ASP.NET Core 8.0 ve GraphQL Kursu 🌐
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-c-sharp.svg)](http://forthebadge.com)
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 
-Projeto do curso de ASP.NET Core com GraphQL.
+ASP.NET Core ile GraphQL kursunun projesi.
 
-Bem-vindo ao repositório do curso **ASP.NET Core API com GraphQL**! Este projeto faz parte da **S08E03**, onde exploramos a integração do GraphQL em APIs .NET. Se você está começando ou quer aprimorar suas habilidades em GraphQL com C#, este é o lugar certo! 🌟
+**ASP.NET Core API ile GraphQL** kursunun deposuna hoş geldiniz! Bu derste, GraphQL'in .NET API'leriyle nasıl entegre edileceğini keşfediyoruz. Eğer GraphQL'i C# ile öğrenmeye yeni başlıyorsanız veya becerilerinizi geliştirmek istiyorsanız, doğru yerdesiniz! 🌟
 
-Link do curso: 
+Kurs bağlantısı:  
 [https://www.udemy.com/course/aspnet-core-graphql](https://www.udemy.com/course/aspnet-core-graphql)
 
 
 ---
 
-## 📚 Sobre o Curso
-Neste módulo, você aprenderá a:
-- Configurar um endpoint GraphQL em uma API ASP.NET Core.
-- Criar **Queries** e **Mutations** para manipulação de dados.
-- Implementar **Subscriptions** para comunicação em tempo real.
-- Utilizar bibliotecas como `GraphQL.Server` e `GraphQL.Client`.
-- Integrar com Entity Framework Core para acesso a banco de dados.
+## 📚 Kurs Hakkında
+Bu modülde şunları öğreneceksiniz:
+- ASP.NET Core API'sinde bir GraphQL uç noktası ayarlama.
+- Veri manipülasyonu için **Sorgular (Queries)** ve **Mutasyonlar (Mutations)** oluşturma.
+- Gerçek zamanlı iletişim için **Abonelikler (Subscriptions)** uygulama.
+- `GraphQL.Server` ve `GraphQL.Client` gibi kütüphaneleri kullanma.
+- Entity Framework Core ile veritabanı erişimi sağlama.
 
 ---
 
-## 🛠 Pré-requisitos
-- **.NET 8.0+** SDK instalado ([Download](https://dotnet.microsoft.com/)).
-- Conhecimento básico em **C#** e **ASP.NET Core**.
-- Familiaridade com conceitos de APIs REST (opcional, mas útil).
-- IDE de preferência: **Visual Studio**.
+## 🛠 Ön Koşullar
+- **.NET 8.0+** SDK yüklü olmalı ([İndirme](https://dotnet.microsoft.com/)).
+- Temel **C#** ve **ASP.NET Core** bilgisi.
+- REST API kavramlarına aşinalık (isteğe bağlı, ancak faydalı).
+- Tercih edilen IDE: **Visual Studio**.
 
 ---

@@ -1,32 +1,32 @@
-# 🚀 Curso de ASP.NET Core 8.0 com GraphQL 🌐
+# 🚀 ASP.NET Core 8.0 और GraphQL कोर्स 🌐
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-c-sharp.svg)](http://forthebadge.com)
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 
-Projeto do curso de ASP.NET Core com GraphQL.
+ASP.NET Core और GraphQL कोर्स का प्रोजेक्ट।
 
-Bem-vindo ao repositório do curso **ASP.NET Core API com GraphQL**! Este projeto faz parte da **S08E03**, onde exploramos a integração do GraphQL em APIs .NET. Se você está começando ou quer aprimorar suas habilidades em GraphQL com C#, este é o lugar certo! 🌟
+**ASP.NET Core API और GraphQL** कोर्स के रिपॉजिटरी में आपका स्वागत है, जहाँ हम .NET APIs में GraphQL के इंटीग्रेशन का पता लगाते हैं। यदि आप GraphQL को C# के साथ सीखना शुरू कर रहे हैं या अपने कौशल को बढ़ाना चाहते हैं, तो यह आपके लिए सही जगह है! 🌟
 
-Link do curso: 
+कोर्स लिंक:  
 [https://www.udemy.com/course/aspnet-core-graphql](https://www.udemy.com/course/aspnet-core-graphql)
 
 
 ---
 
-## 📚 Sobre o Curso
-Neste módulo, você aprenderá a:
-- Configurar um endpoint GraphQL em uma API ASP.NET Core.
-- Criar **Queries** e **Mutations** para manipulação de dados.
-- Implementar **Subscriptions** para comunicação em tempo real.
-- Utilizar bibliotecas como `GraphQL.Server` e `GraphQL.Client`.
-- Integrar com Entity Framework Core para acesso a banco de dados.
+## 📚 कोर्स के बारे में
+इस मॉड्यूल में, आप सीखेंगे:
+- ASP.NET Core API में एक GraphQL एंडपॉइंट कॉन्फ़िगर करना।
+- डेटा मैनिपुलेशन के लिए **Queries** और **Mutations** बनाना।
+- रीयल-टाइम कम्युनिकेशन के लिए **Subscriptions** लागू करना।
+- `GraphQL.Server` और `GraphQL.Client` जैसी लाइब्रेरी का उपयोग करना।
+- Entity Framework Core के साथ डेटाबेस एक्सेस के लिए इंटीग्रेशन।
 
 ---
 
-## 🛠 Pré-requisitos
-- **.NET 8.0+** SDK instalado ([Download](https://dotnet.microsoft.com/)).
-- Conhecimento básico em **C#** e **ASP.NET Core**.
-- Familiaridade com conceitos de APIs REST (opcional, mas útil).
-- IDE de preferência: **Visual Studio**.
+## 🛠 पूर्वापेक्षाएँ
+- **.NET 8.0+** SDK इंस्टॉल किया हुआ ([डाउनलोड](https://dotnet.microsoft.com/))।
+- **C#** और **ASP.NET Core** का बुनियादी ज्ञान।
+- REST API कॉन्सेप्ट्स की परिचिति (वैकल्पिक, लेकिन उपयोगी)।
+- पसंदीदा IDE: **Visual Studio**।
 
 ---

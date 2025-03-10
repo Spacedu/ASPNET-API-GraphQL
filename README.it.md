@@ -1,32 +1,32 @@
-# 🚀 Curso de ASP.NET Core 8.0 com GraphQL 🌐
+# 🚀 Corso ASP.NET Core 8.0 con GraphQL 🌐
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-c-sharp.svg)](http://forthebadge.com)
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 
-Projeto do curso de ASP.NET Core com GraphQL.
+Progetto del corso di ASP.NET Core con GraphQL.
 
-Bem-vindo ao repositório do curso **ASP.NET Core API com GraphQL**! Este projeto faz parte da **S08E03**, onde exploramos a integração do GraphQL em APIs .NET. Se você está começando ou quer aprimorar suas habilidades em GraphQL com C#, este é o lugar certo! 🌟
+Benvenuti nel repository del corso **API ASP.NET Core con GraphQL**, dove esploriamo l'integrazione di GraphQL nelle API .NET. Se stai iniziando o vuoi migliorare le tue competenze in GraphQL con C#, questo è il posto giusto per te! 🌟
 
-Link do curso: 
+Link al corso:  
 [https://www.udemy.com/course/aspnet-core-graphql](https://www.udemy.com/course/aspnet-core-graphql)
 
 
 ---
 
-## 📚 Sobre o Curso
-Neste módulo, você aprenderá a:
-- Configurar um endpoint GraphQL em uma API ASP.NET Core.
-- Criar **Queries** e **Mutations** para manipulação de dados.
-- Implementar **Subscriptions** para comunicação em tempo real.
-- Utilizar bibliotecas como `GraphQL.Server` e `GraphQL.Client`.
-- Integrar com Entity Framework Core para acesso a banco de dados.
+## 📚 Informazioni sul Corso
+In questo modulo, imparerai a:
+- Configurare un endpoint GraphQL in un'API ASP.NET Core.
+- Creare **Queries** e **Mutations** per la manipolazione dei dati.
+- Implementare **Subscriptions** per la comunicazione in tempo reale.
+- Utilizzare librerie come `GraphQL.Server` e `GraphQL.Client`.
+- Integrare Entity Framework Core per l'accesso al database.
 
 ---
 
-## 🛠 Pré-requisitos
-- **.NET 8.0+** SDK instalado ([Download](https://dotnet.microsoft.com/)).
-- Conhecimento básico em **C#** e **ASP.NET Core**.
-- Familiaridade com conceitos de APIs REST (opcional, mas útil).
-- IDE de preferência: **Visual Studio**.
+## 🛠 Prerequisiti
+- **.NET 8.0+** SDK installato ([Scarica](https://dotnet.microsoft.com/)).
+- Conoscenza base di **C#** e **ASP.NET Core**.
+- Familiarità con i concetti delle API REST (opzionale, ma utile).
+- IDE preferito: **Visual Studio**.
 
 ---
