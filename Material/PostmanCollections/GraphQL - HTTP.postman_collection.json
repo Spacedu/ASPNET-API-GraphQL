@@ -1,0 +1,311 @@
+{
+	"info": {
+		"_postman_id": "86d40a97-4060-412f-b005-a787c406cde9",
+		"name": "GraphQL - HTTP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "228644"
+	},
+	"item": [
+		{
+			"name": "00 - OthersResources",
+			"item": [
+				{
+					"name": "Fragments",
+					"item": [
+						{
+							"name": "POST - Fragments",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "GraphQL-Require-Preflight",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"query\": \"{ m1:movie(id:1) { ...MovieFragment } m2:movie(id:51){ ...MovieFragment } m3:movie(id:20) { ...MovieFragment } } fragment MovieFragment on Movie { identity:id title:name summary:description release:launchDate category:genre }\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7093/graphql",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7093",
+									"path": [
+										"graphql"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Variables",
+					"item": [
+						{
+							"name": "POST - Variables",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "GraphQL-Require-Preflight",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"query\": \"query GetMovie($movieId: Int!) { movie(id:$movieId) { id name description } }\",\r\n    \"variables\": {\r\n        \"movieId\": 12\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7093/graphql",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7093",
+									"path": [
+										"graphql"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Alias",
+					"item": [
+						{
+							"name": "POST - Alias",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "GraphQL-Require-Preflight",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"query\": \"{ all:movies {id name } m1:movie(id:49) { id title:name summary:description release:launchDate category:genre } m2:movie(id:48){ id name } }\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7093/graphql",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7093",
+									"path": [
+										"graphql"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Query",
+			"item": [
+				{
+					"name": "POST - All Movies",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "GraphQL-Require-Preflight",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"query\": \"{ movies { id name description } }\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7093/graphql",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7093",
+							"path": [
+								"graphql"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST - Get Movie",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "GraphQL-Require-Preflight",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"query\": \"{ movie(id:51) { id name description launchDate genre } }\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7093/graphql",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7093",
+							"path": [
+								"graphql"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET - Get Movie",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "GraphQL-Require-Preflight",
+								"value": "1",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:7093/graphql?query={ movie(id:49) { id name description } }",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7093",
+							"path": [
+								"graphql"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": "{ movie(id:49) { id name description } }"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET - All Movies",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "GraphQL-Require-Preflight",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:7093/graphql?query={ movies { id name description } }",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7093",
+							"path": [
+								"graphql"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": "{ movies { id name description } }"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Mutation",
+			"item": [
+				{
+					"name": "POST - Update Movie",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "GraphQL-Require-Preflight",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"query\": \"mutation UpdateMovie($movieId:ID! $movie:MovieInput!) { updateMovie( id: $movieId, movie:$movie ) { name id } }\",\r\n    \"variables\": {\r\n        \"movieId\": 51,\r\n        \"movie\": {\r\n            \"description\": \"XYZ X2\",\r\n            \"name\": \"Ice age\",\r\n            \"launchDate\": \"2016-01-01T14:10:20+01:00\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7093/graphql",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7093",
+							"path": [
+								"graphql"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
