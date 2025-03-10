@@ -38,7 +38,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseGraphQL<MovieSchema>();
 app.UseHttpsRedirection();
-
+app.UseGraphQLAltair();
 app.UseAuthorization();
 
 app.MapControllers();
