@@ -42,7 +42,7 @@ Este repositório oferece suporte a vários idiomas para facilitar o acesso ao c
 ## 📑 Versões Disponíveis
 
 - **English (Inglês):** [README](docs/readme/readme.en.md)
-- **Português (Brasil):** [README](docs/readme/readme.pt-br.md)
+- **Português (Brasil):** [README](docs/readme/readme.pt.md)
 - **Español (Espanhol):** [README](docs/readme/readme.es.md)
 - **Français (Francês):** [README](docs/readme/readme.fr.md)
 - **Deutsch (Alemão):** [README](docs/readme/readme.de.md)
