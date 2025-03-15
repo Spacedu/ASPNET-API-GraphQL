@@ -8,7 +8,7 @@ Project for the ASP.NET Core 8.0 with GraphQL course.
 Welcome to the repository for the **ASP.NET Core API with GraphQL** course, where we explore integrating GraphQL into .NET APIs. If you're just starting out or want to enhance your skills in GraphQL with C#, this is the right place for you! 🌟
 
 Course link:  
-[https://www.udemy.com/course/aspnet-core-graphql](https://www.udemy.com/course/aspnet-core-graphql)
+PT-BR - [https://www.udemy.com/course/aspnet-core-api-com-graphql-pt](https://www.udemy.com/course/aspnet-core-api-com-graphql-pt)
 
 
 ---
